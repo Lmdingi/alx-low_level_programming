@@ -1,0 +1,9 @@
+#include <stdio.h>
+/**
+ * main - telling us about the size
+ * Return: 0
+ */
+int main()
+{
+	printf("size of a char: is=%i byte(s)\n", sizeof (char));
+}
