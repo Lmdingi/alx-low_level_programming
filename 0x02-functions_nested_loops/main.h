@@ -1,9 +1,10 @@
-#ifndef main
-
-int print_alphabet()
+ 
+void print_alphabet()
 {
-	printf("a");
-	return (0);
+	char a = 'a';
+
+	putchar(a);
+	printf("\n");
+
 }
-#define main
-#endif
+
