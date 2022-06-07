@@ -1,10 +1,10 @@
- 
-void print_alphabet()
+int _putchar(char c)
 {
-	char a = 'a';
-
-	putchar(a);
-	printf("\n");
-
+	return(write(1, &c, 1));
 }
 
+int next_line(void)
+{
+	printf("\n");
+	return (0);
+}
