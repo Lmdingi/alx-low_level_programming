@@ -1,13 +1,14 @@
 
-int _putchar(cha c)
+int _putchar(char c)
+
 
 void print_alphabet(void)
 {
-	int p;
+	int print;
 	
-	for (p = 'a'; p <= 'z'; p)
+	for (print = 'a'; print <= 'z'; print++)
 	{
-		_putchar(p);
+		_putchar(print);
 	}
 }
 
