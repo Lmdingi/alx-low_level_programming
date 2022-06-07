@@ -6,8 +6,12 @@ int _putchar(char c)
 
 void print_alphabet(void)
 {
-	char ch = 'k';
-	_putchar(ch);
+	int pt;
+	
+	for (pt = 'a'; pt <= 'z'; pt++)
+	{
+		_putchar(pt);
+	}
 }
 
 int next_line(void)
