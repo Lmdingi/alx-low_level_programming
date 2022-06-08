@@ -9,6 +9,6 @@ int main(void)
 {
 	char ch = 'l';
 	_putchar(ch);
-	next_line();
+	_putchar('\n');
 	return (0);
 }
