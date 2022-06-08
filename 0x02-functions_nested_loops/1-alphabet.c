@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include "_putchar.c"
 
 /**
  * main - check the code
@@ -10,4 +10,14 @@ int main (void)
 {
 	print_alphabet();
 	return (0);
+}
+
+void print_alphabet(void)
+{
+	char a;
+	
+	for (a = 'a'; a <= 'z'; a++)
+		_putchar(a);
+
+	_putchar('\n');
 }
