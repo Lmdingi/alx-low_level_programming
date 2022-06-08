@@ -7,8 +7,6 @@
  */
 int main(void)
 {
-	char ch = 'l';
-	_putchar(ch);
-	_putchar('\n');
+	print_aphabet();
 	return (0);
 }
