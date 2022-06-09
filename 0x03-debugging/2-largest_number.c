@@ -2,15 +2,15 @@
 #include "main.h"
 
 /**
- * main - prints the largest of 3 interges
- * Return: 0
+ * main - print the largest of 3 intagers
+ * return: 0
  */
-int mian(void)
+int main(void)
 {
 	int a, b, c;
 	int largest;
 
-	a = 927;
+	a = 972;
 	b = -98;
 	c = 0;
 
