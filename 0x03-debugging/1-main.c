@@ -5,11 +5,11 @@
  * Return: 0
  */
 
-int main(voi)
+int main(void)
 {
 	int i;
 
-	printf("Infinite loop incomming :(\n");
+	printf("Infinite loop incoming :(\n");
 
 	i = 0;
 /*
