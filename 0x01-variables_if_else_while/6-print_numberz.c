@@ -1,16 +1,16 @@
 #include <stdio.h>
 
- /**
-  * main - print numbers with putchar
-  * Return: Always 0.
-  */
+/**
+ * main - lonto iyiyo
+ * Return: Alway 0.
+ */
 int main(void)
 {
 	int num = 0;
 
 	while (num < 10)
 	{
-		putchar(num);
+		putchar((num % 10) + '0');
 		num++;
 	}
 	putchar('\n');
