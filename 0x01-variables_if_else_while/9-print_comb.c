@@ -11,9 +11,12 @@ int main(void)
 	while (si < 10)
 	{
 		putchar((si % 10) + '0');
+		if (si < 9)
+		{
+			putchar(co);
+			putchar(sp);
+		}
 		si++;
-		putchar(co);
-		putchar(sp);
 	}
 	putchar('\n');
 	return (0);
