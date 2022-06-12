@@ -2,21 +2,20 @@
 
 /**
  * _islower - checks if its lower case
+ * @c: takes in charecter
  * Return: 1 or 0
  */
 int _islower(int c)
 {
 	int r;
-	int lower = 1;
-	int upper = 0;
 
-	if (c >= 'a' || c <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
-		r = lower;
+		r = 1;
 	}
 	else
 	{
-		r = upper;
+		r = 0;
 	}
 	return (r);
 }
