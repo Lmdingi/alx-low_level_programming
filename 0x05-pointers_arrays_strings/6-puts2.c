@@ -8,8 +8,9 @@
 void puts2(char *str)
 {
 	int ps, eof;
+	int emt = 0;
 
-	if (*(str + 0) == '\0')
+	if (*(str + emt) == '\0')
 	{
 		_putchar('\0');
 	}
