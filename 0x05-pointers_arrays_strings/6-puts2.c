@@ -12,7 +12,7 @@ void puts2(char *str)
 
 	if (*(str + emt) == '\0')
 	{
-		_putchar('\0');
+		_putchar(*(str + emt));
 	}
 	else
 	{
