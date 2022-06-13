@@ -9,7 +9,14 @@ void puts2(char *str)
 {
 	int ps, eof;
 
-	_putchar(*(str + 0));
+	if (*(str + 0) == '\0')
+	{
+		_putchar('\0');
+	}
+	else
+	{
+		_putchar(*(str + 0));
+	}
 	for (ps = 1; *(str + ps) != '\0'; ps++)
 	{
 		eof++;
