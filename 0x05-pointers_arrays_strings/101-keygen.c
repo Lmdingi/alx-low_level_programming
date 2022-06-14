@@ -5,7 +5,8 @@
 
 int main(void)
 {
-	srand((unsigned int)(time(NULL)));
+	unsigned int u
+	srand((u)(time(NULL)));
 	int i;
 	char pass[12];
 	char capLetter, letter;
