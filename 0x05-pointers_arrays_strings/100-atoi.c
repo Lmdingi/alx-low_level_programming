@@ -7,23 +7,23 @@
  */
 int _atoi(char *s)
 {
-	int result;
-	int puiss;
+	int num = 0;
+	int i = 0;
+	int isNegetive = 0;
 
-	result = 0;
-	puiss = 1;
-	while (('-' == (*s)) || ((*s) == '+'))
+	if (s[i] == '-')
 	{
-		if (*s == '-')
-		{
-			puiss = puiss * -1;
-		}
-		s++;
+		isNegetive = 1;
+		i++;
 	}
-	while ((*s >= '0') && (*s <= '9'))
+	while (s[i] && (s[i] >= '0' && s[i] <= '9'))
 	{
-		result = (result * 10) + ((*s) - '0');
-		s++;
+		num = num * 10 + (s[i] - '0');
+		i++;
 	}
-	return (result * puiss);
+	if (isNegetive)
+	{
+		num = -1 * num;
+	}
+	return (num);
 }
