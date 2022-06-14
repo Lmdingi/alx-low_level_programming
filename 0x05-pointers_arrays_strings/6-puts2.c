@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * puts2 - print second char
@@ -7,24 +8,12 @@
  */
 void puts2(char *str)
 {
-	int ps, eof;
-	int emt = 0;
+	int len, i;
 
-	if (*(str + emt) == '\0')
+	len = strlen(str);
+	for (i = 0; i < len; i += 2)
 	{
-		_putchar(*(str + emt));
-	}
-	else
-	{
-		_putchar(*(str + 0));
-	}
-	for (ps = 1; *(str + ps) != '\0'; ps++)
-	{
-		eof++;
-		if ((ps % 2) == 0)
-		{
-		_putchar(*(str + ps));
-		}
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
