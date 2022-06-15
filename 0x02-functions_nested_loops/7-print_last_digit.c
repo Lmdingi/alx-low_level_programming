@@ -8,7 +8,15 @@
  */
 int print_last_digit(int a)
 {
+	int r;
 
-	_putchar((a % 10) + '0');
-	return (a);
+	if (a <= 9 && a >= -9)
+	{
+		r = a;
+	}
+	else
+	{
+		r = a % 10;
+	}
+	return (r);
 }
