@@ -10,7 +10,11 @@ int print_last_digit(int a)
 {
 	int r;
 
-	if (a <= 9 && a >= -9)
+	if (a <= 9)
+	{
+		r = a;
+	}
+	else if (a >= -9)
 	{
 		r = a;
 	}
