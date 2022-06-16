@@ -24,12 +24,12 @@ void times_table(void)
 			{
 				printf("\n");
 			}
-			else			
-			{			
-				printf(", ");
+			else
+			{
+				printf(",.");
 				if (ans <= 9)
 				{
-					printf(" ");
+					printf(".");
 				}
 			}
 		}
