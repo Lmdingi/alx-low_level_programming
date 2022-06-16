@@ -27,12 +27,13 @@ void times_table(void)
 			else
 			{
 				printf(",.");
-				if (ans <= 9)
+				if (((zero2nine + 1) * ourTimes) < 10)
 				{
 					printf(".");
 				}
 			}
 		}
+	
 	}
 }
 
