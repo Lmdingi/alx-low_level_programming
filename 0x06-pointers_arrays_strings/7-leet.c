@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * leet - Encodes a string
  * @s: The string to encode
  * Return: The encoded string
