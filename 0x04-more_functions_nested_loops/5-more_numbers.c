@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - a function 
+ * more_numbers - a function
  * Return: 0-14 x10 followed by new line
  */
 void more_numbers(void)
