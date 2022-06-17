@@ -10,20 +10,12 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int dcount, sd;
-	char holder[100];
+	int i, n;
 
-	for (dcount = 0; *(dest + dcount) != '\0'; dcount++)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		holder[dcount] = *(dest + dcount);
 	}
-	sd = sizeof(&dest);
-	for (dcount = 0; *(src + dcount) != '\0'; dcount++)
+	for (n = 0; (dest[i + n] = *src++) != '\0'; n++)
 	{
-		holder[sd] = *(src + dcount);
-		sd++;
 	}
-	sd++;
-	holder[sd] = *(src + dcount);
-	return (&holder);
-}
+	return (dest);
