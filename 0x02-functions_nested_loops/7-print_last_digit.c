@@ -4,20 +4,17 @@
 /**
  * print_last_digit - print last number
  * @a: take digits
- *i Return: last number
+ * Return: last number
  */
 int print_last_digit(int a)
 {
-	int number = a;
-	int lastdigit;
+	int b;
 
-	if (number >= -9 && number >= 9)
+	b = (a % 10);
+	if (b < 0)
 	{
-		return (number);
+		b = (-1 * b);
 	}
-	else
-	{
-		lastdigit = number % 10;
-	}
-	return (lastdigit);
+	_putchar(b + '0');
+	return (b);
 }
